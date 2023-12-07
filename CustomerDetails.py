@@ -1,26 +1,21 @@
-import json
-from dataclasses import dataclass
-
-@dataclass
 class CustomerDetails:
-
-    monthly_inhand_salary : float
-    num_bank_accounts: int
-    num_credit_card : int
-    interest_rate : float
-    num_of_loan : int
-    delay_from_due_date : int
-    num_of_delayed_payment : int
-    changed_credit_limit : float
-    num_credit_inquiries : int
-    credit_mix : str
-    outstanding_debt : float
-    credit_utilization_ratio : float
-    credit_history_age : int
-    payment_of_min_amount : str
-    total_emi_per_month : float
-    amount_invested_monthly : float
-    monthly_balance : float
-    payment_behaviour : str
-
+    def __init__(self, form):
+        self.monthly_inhand_salary = float(form.get('monthly_inhand_salary', 0))
+        self.num_bank_accounts = int(form.get('num_bank_accounts', 0))
+        self.num_credit_card = int(form.get('num_credit_card', 0))
+        self.interest_rate = float(form.get('interest_rate', 0))
+        self.num_of_loan = int(form.get('num_of_loan', 0))
+        self.delay_from_due_date = int(form.get('delay_from_due_date', 0))
+        self.num_of_delayed_payment = int(form.get('num_of_delayed_payment', 0))
+        self.changed_credit_limit = float(form.get('changed_credit_limit', 0))
+        self.num_credit_inquiries = int(form.get('num_credit_inquiries', 0))
+        self.credit_mix = form.get('credit_mix', '')
+        self.outstanding_debt = float(form.get('outstanding_debt', 0))
+        self.credit_utilization_ratio = float(form.get('credit_utilization_ratio', 0))
+        self.credit_history_age = int(form.get('credit_history_age', 0))
+        self.payment_of_min_amount = form.get('payment_of_min_amount', '')
+        self.total_emi_per_month = float(form.get('total_emi_per_month', 0))
+        self.amount_invested_monthly = float(form.get('amount_invested_monthly', 0))
+        self.monthly_balance = float(form.get('monthly_balance', 0))
+        self.payment_behaviour = form.get('payment_behaviour', '')
 
