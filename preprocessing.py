@@ -1,6 +1,6 @@
 from CustomerDetails import CustomerDetails
 
-
+# Data Preprocessing steps along with one hot encoding
 def get_preprocessed_array(customer_details: CustomerDetails):
     preprocessed_values = []
     preprocessed_values.append(customer_details.monthly_inhand_salary)

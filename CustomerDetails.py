@@ -1,6 +1,6 @@
 from pandas import Series
 
-
+# Customer Details pojo class
 class CustomerDetails:
 
     def __int__(self, cust_series: Series):

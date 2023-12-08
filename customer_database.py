@@ -5,6 +5,7 @@ from CustomerDetails import CustomerDetails
 customer_df = pd.read_csv('customer_details.csv')
 
 
+# Get customer data from customer dataframe based on customer ID and SSN
 def get_customer_details(customer_id, ssn):
     try:
         cdf = customer_df[(customer_df['Customer_ID'] == customer_id) &
