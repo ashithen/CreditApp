@@ -5,9 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../static/styles.css">
-    <title>Credit Score Classification - Employee</title>
+    <title>Credit Score Classification - Guest User</title>
     <style>
-        /* Additional styles for the employee page */
+        /* Additional styles for the guest user page */
         form {
             max-width: 400px;
             margin: 20px auto;
@@ -45,7 +45,7 @@
 </head>
 <body>
     <div class="container">
-        <h1>Employee Information</h1>
+        <h1>Guest User Information</h1>
         <form action="/guest/predict" method="post">
             <label for="monthlyInhandSalary">Monthly Inhand Salary (float):</label>
             <input type="number" step="0.01" id="monthlyInhandSalary" name="monthly_inhand_salary" required>
