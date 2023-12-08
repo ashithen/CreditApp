@@ -14,4 +14,4 @@ def get_scale_data(data):
 
 def get_prediction(data):
     scaled_data = get_scale_data(data)
-    return model.predict(data)
+    return model.predict(scaled_data)

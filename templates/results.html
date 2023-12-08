@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../styles/styles.css">
+    <link rel="stylesheet" href="../static/styles.css">
     <title>Credit Score Classification Results</title>
     <style>
         /* Add your styles here or link an external stylesheet */
@@ -59,22 +59,22 @@
             // Data for four bar charts
             var data1 = google.visualization.arrayToDataTable([
                 ['credit score', 'Good', 'Standard', 'Poor', 'User'],
-                ['Number of delayed payment', 8, 13, 15, delayed_payments],
+                ['Average number of delayed payment', 8, 13, 15, delayed_payments],
             ]);
 
             var data2 = google.visualization.arrayToDataTable([
                 ['credit score', 'Good', 'Standard', 'Poor', 'User'],
-                ['Outstanding debt', 801.25, 1278.42, 2081.47, debt],
+                ['Average Outstanding debt', 801.25, 1278.42, 2081.47, debt],
             ]);
 
             var data3 = google.visualization.arrayToDataTable([
                 ['credit score', 'Good', 'Standard', 'Poor', 'User'],
-                ['Delay from due date', 11, 20, 29, due],
+                ['Average Delay from due date', 11, 20, 29, due],
             ]);
 
             var data4 = google.visualization.arrayToDataTable([
                 ['credit score', 'Good', 'Standard', 'Poor', 'User'],
-                ['Monthly Inhand Salary	', 5403.76, 4238.65, 3379.8, sal],
+                ['Average Monthly Inhand Salary	', 5403.76, 4238.65, 3379.8, sal],
             ]);
 
             var options = {
