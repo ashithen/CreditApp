@@ -35,7 +35,8 @@ def predict_guest_score():
     customer_details = CustomerDetails(request.form)
     creditScoreCategory = predict_score(customer_details)
 
-    return render_template('results.html', creditScoreCategory=creditScoreCategory)
+    return render_template('results.html', creditScoreCategory=creditScoreCategory,
+                           customer_details = customer_details)
 
 
 def predict_score(customer_details: CustomerDetails):
